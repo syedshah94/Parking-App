@@ -9,7 +9,7 @@
 
 ![alternateText](./assets/index.jpg)
 
-![alternateText](./assets/erd/png)
+![alternateText](./assets/erd.png)
 
 Specifics:
 -Users can log in
