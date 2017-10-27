@@ -9,6 +9,8 @@
 
 ![alternateText](./assets/index.jpg)
 
+![alternateText](./assets/erd)
+
 Specifics:
 -Users can log in
 -Geolocate current position, log it as as your parking spot
