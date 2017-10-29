@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS parking_users (
   email VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS spots;
-CREATE TABLE IF NOT EXISTS spots (
+DROP TABLE IF EXISTS parking_spots;
+CREATE TABLE IF NOT EXISTS parking_spots (
   id SERIAL PRIMARY KEY,
   -- longitude FLOAT(53),
   -- latitude FLOAT(53),
