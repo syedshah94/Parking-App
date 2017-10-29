@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS users;
-CREATE TABLE IF NOT EXISTS users (
+DROP TABLE IF EXISTS parking_users;
+CREATE TABLE IF NOT EXISTS parking_users (
   id SERIAL PRIMARY KEY,
   username VARCHAR(255) UNIQUE NOT NULL,
   password_digest TEXT,
@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS users (
 DROP TABLE IF EXISTS spots;
 CREATE TABLE IF NOT EXISTS spots (
   id SERIAL PRIMARY KEY,
-  longitude FLOAT(64),
-  latitude FLOAT(64),
+  -- longitude FLOAT(53),
+  -- latitude FLOAT(53),
   location TEXT,
   description TEXT,
   available BOOLEAN,
