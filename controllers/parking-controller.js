@@ -1,6 +1,6 @@
 const Parking = require('../models/parking');
 
-const parkingController = {};
+const parkingController = {}; //Create our controller object to hold our control methods
 
 parkingController.index = (req, res) => {
   Parking.findAll()
@@ -35,11 +35,10 @@ parkingController.show = (req, res) => {
 parkingController.create = (req, res) => {
   console.log(req.body);
   Parking.create({
-    task: req.body.task,
-    deadline: req.body.deadline,
     location: req.body.location,
-    priority: req.body.priority,
-    complete: req.body.complete,
+    description: req.body.description,
+    available: req.body.available,
+    departTime: req.body.departTime,
   }).then(() => {
     res.redirect('/parking');
     //redirect uses the directory the browser will follow, not the relative path.

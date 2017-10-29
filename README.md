@@ -22,6 +22,10 @@ tables used:
 -users 
 -spots
 
+NOTE: Changing migrations will require changing models and controllers as well.
+This is important to keep in mind when we add in an API or User authentication.
+
+
 ## Phases of Completion
 
 (The steps or phases you expect to go through, and the tasks that you'll need to accomplish to reach each step. These should resemble the acceptance criteria we were working through earlier.)

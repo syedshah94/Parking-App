@@ -45,7 +45,7 @@ app.get('/', (req,res) => {
 
 //todo routes:
 const todoRoutes = require('./routes/parking-routes.js');
-app.use('/parking', parkingRoutes);
+app.use('/parking', parkingRoutes); //use parkingRoutes to handle what to do with '/parking' in browser
 
 //Exception for unexpected browser link:
 app.get('*', (req, res) => {
