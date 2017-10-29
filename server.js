@@ -7,7 +7,7 @@ const methodOverride = require('method-override'); //Allows us to override brows
 //create the app
 const app = express(); //create an express object, technically the name should be App but I prefer this for now
 
-app.use(methodOverride('_method')//method override
+app.use(methodOverride('_method'));//method override
   //Note:'_method' is a sort of delimiter we will use to specificy an override
 
 require('dotenv').config(); //use this to hide API key and run server
@@ -44,7 +44,7 @@ app.get('/', (req,res) => {
 //route requires
 
 //todo routes:
-const todoRoutes = require('./routes/parking-routes.js');
+const parkingRoutes = require('./routes/parking-routes.js');
 app.use('/parking', parkingRoutes); //use parkingRoutes to handle what to do with '/parking' in browser
 
 //Exception for unexpected browser link:
