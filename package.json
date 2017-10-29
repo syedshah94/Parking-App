@@ -1,0 +1,25 @@
+{
+  "name": "parking-app",
+  "version": "1.0.0",
+  "description": "A simple parking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debugger": "DEBUG=*:* npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedshah94/Parking-App.git"
+  },
+  "author": "Syed W Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedshah94/Parking-App/issues"
+  },
+  "homepage": "https://github.com/syedshah94/Parking-App#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
