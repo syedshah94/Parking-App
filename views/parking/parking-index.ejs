@@ -1,4 +1,4 @@
-<% include ../partials/boilerplate %>
+<% include ../partials/parking_boilerplate %>
 
 <h1>parking index</h1>
 
@@ -16,7 +16,8 @@
            <p><%= parking[item].description %></p>
            <p><%= parking[item].available %></p>
            <p><%= parking[item].departtime %></p>
-            <p><% console.log(parking[item].location) %></p>
+           <p><%= parking[item].latitude %></p>
+           <p><%= parking[item].longitude %></p>
 
           <form method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
               <button type="submit">Remove</button>
@@ -36,4 +37,4 @@
 </section>
 
 
-<% include ../partials/end %>
+<% include ../partials/parking_end %>

@@ -18,8 +18,7 @@ app.use(logger('dev'));//Use the logger when we type 'dev' in the terminal
 //This way we can run both nodemon and our logger simply by typing 'npm run dev'
 
 app.use(bodyParser.json()); //parse info to a json
-app.use(bodyParser.urlencoded({extended: false})); //Not 100% sure what this does
-
+app.use(bodyParser.urlencoded({extended: false})); //<----Come back to comment this later
 //static config (to handle static files)
 app.use(express.static('public')); //Directory where our static files will live
 

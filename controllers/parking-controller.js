@@ -35,6 +35,9 @@ parkingController.show = (req, res) => {
 parkingController.create = (req, res) => {
   console.log(req.body);
   Parking.create({
+
+    latitude: req.body.latitude || null,
+    longitude: req.body.longitude || null,
     location: req.body.location,
     description: req.body.description,
     available: req.body.available,
@@ -53,6 +56,8 @@ parkingController.create = (req, res) => {
 
 parkingController.update = (req, res) => {
   Parking.update({
+    latitude: req.body.latitude,
+    longitude: req.body.longitude,
     location: req.body.location,
     description: req.body.description,
     available: req.body.available,

@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS parking_users (
 DROP TABLE IF EXISTS parking_spots;
 CREATE TABLE IF NOT EXISTS parking_spots (
   id SERIAL PRIMARY KEY,
-  -- longitude FLOAT(53),
-  -- latitude FLOAT(53),
+  longitude DECIMAL(12,9),
+  latitude DECIMAL(12,9),
   location TEXT,
   description TEXT,
   available BOOLEAN,
