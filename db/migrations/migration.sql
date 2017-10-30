@@ -15,5 +15,5 @@ CREATE TABLE IF NOT EXISTS parking_spots (
   description TEXT,
   available BOOLEAN,
   departTime TEXT,
-  user_id INTEGER REFERENCES users(id)
+  user_id INTEGER REFERENCES parking_users(id)
 );

@@ -1,0 +1,38 @@
+<% include ../partials/boilerplate %>
+
+<h1>parking index</h1>
+
+<section>
+  <div class="pageContent">
+    <div>parking div?!</div>
+
+    <div class="todoList">
+      <ul>
+        <% for (let item in parking){ %>
+         <li>
+           <a href="/parking/<%= parking[item].id %>">
+            <p><%= parking[item].location %></p>
+           </a>
+           <p><%= parking[item].description %></p>
+           <p><%= parking[item].available %></p>
+           <p><%= parking[item].departTime %></p>
+
+          <form method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
+              <button type="submit">Remove</button>
+          </form>
+
+         </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+
+  <button class="add-button">
+    <a href="/parking/add">Add Item</a>
+  </button>
+
+
+</section>
+
+
+<% include ../partials/end %>
