@@ -23,8 +23,9 @@ tables used:
 -spots
 
 NOTE: Changing migrations will require changing MODELS and CONTROLLERS as well.
-It may also need a changes on /seeds 
-This is important to keep in mind when we add in an API or User authentication.
+-May need a changes on /seeds 
+-May need to update views
+-This is also important to keep in mind when we add in an API or User authentication.
 
 
 ## Phases of Completion

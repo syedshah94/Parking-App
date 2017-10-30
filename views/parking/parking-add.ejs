@@ -1,0 +1,17 @@
+<% include ../partials/boilerplate %>
+
+<h1> hello from parking-add.ejs </h1>
+
+<section class="parking-container">
+  <p>Feel free to add whatever. I won't judge</p>
+
+  <form method='POST' action='/parking'>
+    <input name='location' type='text' placeholder='Location' />
+    <input name='description' type='text' placeholder='Description' />
+    <input name='available' type='text' placeholder='Available (True/False)'>
+    <input name='departTime' type='text' placeholder='Departure Time'/>
+    <input class='submitBtn' type='submit' value='Submit!' />
+  </form>
+</section>
+
+<% include ../partials/end %>

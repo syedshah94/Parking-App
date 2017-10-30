@@ -1,0 +1,37 @@
+<% include ../partials/boilerplate %>
+
+<h1> hello from parking-single.ejs it works</h1>
+
+<section>
+  <div class="pageContent">
+    <ul>
+      <b><%= parking.id %></b>
+      <li>Location: <%= parking.location %></li>
+      <li>Description: <%= parking.description %></li>
+      <li>Available: <%= parking.available %></li>
+      <li>Departure: <%= parking.departtime %></li>
+  </ul>
+
+   <br><br>
+  <form method="POST" action="/parking/<%= parking.id %>/?_method=PUT">
+    <label>Location</label>
+    <input name="location" value="<%= parking.location%>"><br>
+    <label>Description</label>
+    <input name="description" value="<%= parking.description%>"><br>
+    <label>Available</label>
+    <input name="available" value="<%= parking.available%>"><br>
+    <label>Departure</label>
+    <input name="departTime" value="<%= parking.departtime%>"><br>
+    <br>
+    <button type="submit">Save Changes</button>
+
+  </form>
+
+  <form method="POST" action="/parking/<%= parking.id %>?_method=DELETE">
+      <button type="submit">Remove</button>
+  </form>
+
+  </div>
+</section>
+
+<% include ../partials/end %>

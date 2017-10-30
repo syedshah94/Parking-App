@@ -13,9 +13,9 @@ Parking.create = parking => {
   return db.one(`
     INSERT INTO parking_spots
     (location, description, available, departTime)
-    VALUES ($1, $2, $3, $4, $5)
+    VALUES ($1, $2, $3, $4)
     RETURNING *`,
-    [parking.task, parking.deadline, parking.location, parking.priority, parking.complete]);
+    [parking.location, parking.description, parking.available, parking.departTime]);
 }
 
 //.update() requires a table and an id, so basically parking_users and some id

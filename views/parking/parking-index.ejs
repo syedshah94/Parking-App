@@ -6,7 +6,7 @@
   <div class="pageContent">
     <div>parking div?!</div>
 
-    <div class="todoList">
+    <div class="parkingList">
       <ul>
         <% for (let item in parking){ %>
          <li>
@@ -15,7 +15,8 @@
            </a>
            <p><%= parking[item].description %></p>
            <p><%= parking[item].available %></p>
-           <p><%= parking[item].departTime %></p>
+           <p><%= parking[item].departtime %></p>
+            <p><% console.log(parking[item].location) %></p>
 
           <form method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
               <button type="submit">Remove</button>
