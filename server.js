@@ -57,6 +57,7 @@ app.get('/', (req,res) => {
 });
 
 //Go to about page
+//Note: This page is unreliant on any database.
 app.get('/about', (req,res) => {
   res.render('parking/parking-about');
 });
