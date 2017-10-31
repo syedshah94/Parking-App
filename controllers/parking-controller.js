@@ -4,32 +4,42 @@ const parkingController = {}; //Create our controller object to hold our control
 
 parkingController.index = (req, res) => {
   Parking.findAll()
-    .then((parking) => {
-      res.status(200).render('./parking/parking-index', {
-        parking,
-      });
-    }).catch(err => {
-      console.log(err);
-      res.status(500).json({
-        message: 'Not found!',
-        error: err,
-      });
+  .then((parking) => {
+    res.status(200).format({
+      'text/html': function(){
+        res.render('./parking/parking-index', {
+          parking
+        })
+
+      },
+
+
+      'application/json': function(){
+        res.json({parking});
+      },
+    })
+  }).catch(err => {
+    console.log(err);
+    res.status(500).json({
+      message: 'Not found!',
+      error: err,
     });
+  });
 };
 
 parkingController.show = (req, res) => {
   Parking.findById(req.params.id)
-    .then(parking => {
-      res.status(200).render('./parking/parking-single', {
-        parking,
-      });
-    }).catch(err => {
-        console.log(err);
-        res.status(500).json({
-          message:"Not Found!",
-          error: err,
-        });
+  .then(parking => {
+    res.status(200).render('./parking/parking-single', {
+      parking,
     });
+  }).catch(err => {
+    console.log(err);
+    res.status(500).json({
+      message:"Not Found!",
+      error: err,
+    });
+  });
 }
 
 parkingController.create = (req, res) => {
@@ -75,15 +85,15 @@ parkingController.update = (req, res) => {
 
 parkingController.delete = (req, res) => {
   Parking.destroy(req.params.id)
-    .then(() => {
-      res.redirect('/parking');
-    }).catch(err => {
-      console.log(err);
-      res.status(500).json({
-        message: 'Delete failed',
-        error: err,
-      });
+  .then(() => {
+    res.redirect('/parking');
+  }).catch(err => {
+    console.log(err);
+    res.status(500).json({
+      message: 'Delete failed',
+      error: err,
     });
+  });
 };
 
 module.exports = parkingController;

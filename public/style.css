@@ -180,3 +180,25 @@ a {
 
 /*-------------------------- PARKING-INDEX STYLES---------------------------*/
 
+/*-------------------------- PARKING-ABOUT STYLES---------------------------*/
+.carousel-caption{
+  position: relative;
+  top: 25%;
+}
+.display-1 {
+  color: #f1f1f1;
+  text-shadow: 0px 1px black;
+  font-weight: bold;
+}
+.display-4 {
+  color: #f1f1f1;
+  text-shadow: 0px 1px black;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  font-weight: bold;
+}
+/*-------------------------- END PARKING-ABOUT STYLES---------------------------*/
+
+
+

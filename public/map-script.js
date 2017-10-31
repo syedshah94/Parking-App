@@ -9,6 +9,7 @@ var map = new mapboxgl.Map({
   zoom: 3
 });
 
+
 // code from the next step will go here!
 var geojson = {
   type: 'FeatureCollection',
@@ -50,3 +51,37 @@ geojson.features.forEach(function(marker) {
    .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
   .addTo(map);
 });
+
+
+//Parse data from our server to obtain lat/long and whatever else we may need
+const headers = new Headers({
+  'Accept': 'application/json'
+})
+
+fetch('/parking', {
+  headers: headers
+}).then(res => res.json())
+.then(spotsData => {
+  console.log(spotsData);
+  spotsData.parking.forEach(function(marker) {
+
+  // create a HTML element for each feature
+  var el = document.createElement('div');
+  el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el)
+  .setLngLat([parseFloat(marker.longitude), parseFloat(marker.latitude)])
+  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+   .setHTML('<h3>' + spotsData.description + '</h3><p>' + spotsData.departtime + '</p>'))
+  .addTo(map);
+  });
+})
+
+
+
+
+
+
+
+
