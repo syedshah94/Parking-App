@@ -4,21 +4,38 @@ const path = require('path'); //import 'path' since we will be dealing with rela
 const bodyParser = require('body-parser'); //we're going to use inputs on forms
 const methodOverride = require('method-override'); //Allows us to override browser requests
 
+//Auth requires:
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const passport = require('passport');
+
 //create the app
 const app = express(); //create an express object, technically the name should be App but I prefer this for now
+require('dotenv').config();
 
 app.use(methodOverride('_method'));//method override
   //Note:'_method' is a sort of delimiter we will use to specificy an override
-
-require('dotenv').config(); //use this to hide API key and run server
 
 //config
 app.use(logger('dev'));//Use the logger when we type 'dev' in the terminal
 //Our package.json uses '"dev": "nodemon app.js"'
 //This way we can run both nodemon and our logger simply by typing 'npm run dev'
 
+//Body Parser Middleware
 app.use(bodyParser.json()); //parse info to a json
 app.use(bodyParser.urlencoded({extended: false})); //<----Come back to comment this later
+
+//Cookie Parser Middleware
+app.use(cookieParser());
+app.use(session({
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: true,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+
 //static config (to handle static files)
 app.use(express.static('public')); //Directory where our static files will live
 
@@ -41,10 +58,16 @@ app.get('/', (req,res) => {
 
 
 //route requires
-
-//todo routes:
+//parking routes:
 const parkingRoutes = require('./routes/parking-routes.js');
 app.use('/parking', parkingRoutes); //use parkingRoutes to handle what to do with '/parking' in browser
+//authorization routes
+const authRoutes = require('./routes/auth-routes');
+app.use('/auth', authRoutes);
+//user routes
+const userRoutes = require('./routes/user-routes');
+app.use('/user', userRoutes);
+
 
 //Exception for unexpected browser link:
 app.get('*', (req, res) => {
