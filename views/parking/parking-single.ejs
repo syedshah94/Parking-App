@@ -1,4 +1,4 @@
-<% include ../partials/boilerplate %>
+<% include ../partials/parking_boilerplate %>
 
 <h1> hello from parking-single.ejs it works</h1>
 
@@ -6,10 +6,10 @@
   <div class="pageContent">
     <ul>
       <b><%= parking.id %></b>
-      <li>Location: <%= parking.location %></li>
-      <li>Description: <%= parking.description %></li>
-      <li>Available: <%= parking.available %></li>
-      <li>Departure: <%= parking.departtime %></li>
+      <li><b>Location: </b><%= parking.location %></li>
+      <li><b>Description: </b><%= parking.description %></li>
+      <li><b>Available: </b> <%= parking.available %></li>
+      <li><b>Departure: </b>: <%= parking.departtime %></li>
   </ul>
 
    <br><br>
@@ -40,4 +40,4 @@
   </div>
 </section>
 
-<% include ../partials/end %>
+<% include ../partials/parking_end %>

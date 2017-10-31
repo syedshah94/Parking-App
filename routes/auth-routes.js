@@ -15,7 +15,8 @@ authRouter.get('/register', authHelpers.loginRedirect, (req, res) => {
 authRouter.post('/register', usersController.create);
 
 authRouter.post('/login', passport.authenticate('local', {
-    successRedirect: '/user',
+    // successRedirect: '/user', //Redirect to this when there is a unique user page
+    successRedirect: '/parking',
     failureRedirect: '/auth/login',
     failureFlash: true,
   })

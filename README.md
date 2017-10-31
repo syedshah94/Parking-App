@@ -27,12 +27,16 @@ NOTE: Changing migrations will require changing MODELS and CONTROLLERS as well.
 -May need to update views
 -This is also important to keep in mind when we add in an API or User authentication.
 
+NOTE 2: For when I want to redirect login/register to '/user' page 
+-Change path for register in user.controller.js  .create() method
+--set authRouter.post() to redirect to '/user' when successful.
 
 ## Phases of Completion
 
 (The steps or phases you expect to go through, and the tasks that you'll need to accomplish to reach each step. These should resemble the acceptance criteria we were working through earlier.)
 
 ## Links and Resources
+
 
 (Anything you've looked up so far or are thinking about using.)
 Might be using this as a guide to creating user authentication: 
