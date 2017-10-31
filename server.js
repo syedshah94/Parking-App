@@ -56,6 +56,11 @@ app.get('/', (req,res) => {
   //NOTE: .render() here will know we mean index.ejs, so dont ask for index.ejs (you might have issues)
 });
 
+//Go to about page
+app.get('/about', (req,res) => {
+  res.render('parking/parking-about');
+});
+
 
 //route requires
 //parking routes:
