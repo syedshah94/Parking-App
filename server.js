@@ -62,6 +62,11 @@ app.get('/about', (req,res) => {
   res.render('parking/parking-about');
 });
 
+//Go to maps page
+app.get('/parking-map', (req,res) => {
+  res.render('parking/parking-map');
+});
+
 
 //route requires
 //parking routes:
