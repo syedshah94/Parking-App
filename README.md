@@ -65,7 +65,11 @@ Oct 31st, 2017 (11:07 pm):
     near future if I have time to add in more robustness to this app.
 
 
-
+LONG TERM GOALS:
+    Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
+    they can spend these courtesy points somehow, maybe use it as coupons
+    or just show off that they're better than you when it comes to 
+    courtesy or something... sure, lets go with that. 
 
 ## Links and Resources
 (Anything you've looked up so far or are thinking about using.)
