@@ -81,7 +81,13 @@ Sept 1st, 2017 (12:22 pm):
     quick fix, hopefully we fix this today. I commented out the 'Explore' 
     button on the landing page since its silly to have at this point. 
 
-
+Sept 1st, 2017 (04:34 pm): 
+    So the current state of this project is quite a lot to mention, so I'll 
+    mention the most important details. Currently the app is available on Heroku,
+    however there's still some work to be done. 
+    Currently all users would see the same page upon logging in, so in the
+    future, I will need to create user specific pages, which will simply give 
+    us security of our input and better track who input what.
 -----------------------------------------------------------------------------------
 LONG TERM GOALS:
     -User specific pages
