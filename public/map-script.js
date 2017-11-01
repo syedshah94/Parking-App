@@ -1,7 +1,6 @@
 console.log('map-script.js connected');
-
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3dzMzAzIiwiYSI6ImNqOWVpNnZsOTJhZjIzMnJ3ZXcwYnI5ZDEifQ.w9e2F0_uvFFTHBYz7RIM5w';
-
+// mapboxgl.accessToken = process.env.MAPBOX_API;
 let map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v9',

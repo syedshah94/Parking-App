@@ -28,7 +28,7 @@
           <p><b>Longitude: </b><%= parking[item].longitude %></p>
 
           <form class="remove" method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
-            <button method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE" type="submit" class="btn btn-danger">REMOVE</button>
+            <button method="POST" type="submit" class="btn btn-danger">REMOVE</button>
           </form>
           <hr>
           <br>
