@@ -96,6 +96,13 @@ Sept 1st, 2017 (04:34 pm):
     Currently all users would see the same page upon logging in, so in the
     future, I will need to create user specific pages, which will simply give 
     us security of our input and better track who input what. 
+Sept 1st, 2017 (05:15 pm): 
+    So this app is currently a sort of "Free-For-AllTreasure Chest" in which 
+    anyone can take and put in as they please. Although this problem can be 
+    resolved, the purpose of this app was not to create a completely, fully
+    functioning app, it was to learn Express. I feel I've satisfied my purpose.
+    I'm going to move on to apsiring to master React, and then I can come back to
+    this. 
 -----------------------------------------------------------------------------------
 LONG TERM GOALS:
     -User specific pages
