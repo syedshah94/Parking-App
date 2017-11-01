@@ -63,7 +63,15 @@ Oct 31st, 2017 (11:07 pm):
     but it's just there since this is not a completed app and I feel users should be allowed
     to just access it asap to get the point for now. Maybe I will remove this in the
     near future when I want to add more robustness to this app.
-
+    
+    PRIORITY (in order):
+    --Need to add a way to log out properly
+    --Need to add microinteractions when hovering over navbar items
+    --Need to make parking-index page prettier
+    --Need to add a way to obtain current location's lat./long. values
+    --Need to get lat./long. values of a given address
+    --Set up users page
+    --Create Cards
 
 LONG TERM GOALS:
     -User specific pages
