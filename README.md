@@ -60,13 +60,14 @@ Oct 31st, 2017 (11:07 pm):
     no user-specific page. So far it's just a sort of login and use. Well you 
     don't even need to log in since I made the process simpler with the "Explore"
     button on the landing page. Yes, I am well aware this makes no sense in a real app,
-    but it's just there since this is not a completed app and feel users should be allowed
+    but it's just there since this is not a completed app and I feel users should be allowed
     to just access it asap to get the point for now. Maybe I will remove this in the
-    near future if I have time to add in more robustness to this app.
+    near future when I want to add more robustness to this app.
 
 
 LONG TERM GOALS:
-    Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
+    -User specific pages
+    -Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
     they can spend these courtesy points somehow, maybe use it as coupons
     or just show off that they're better than you when it comes to 
     courtesy or something... sure, lets go with that. 

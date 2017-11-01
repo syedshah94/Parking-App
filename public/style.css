@@ -184,20 +184,24 @@ a {
 /*SOCIAL MEDIA HANDLES*/
 
 .fa-facebook-official{
-  font-weight: bold;
   color: #3B5998;
 }
 .fa-twitter-square{
-  font-weight: bold;
   color: #00aced;
-  padding: 0px 20px;
 }
 .fa-linkedin-square{
-  font-weight: bold;
   color: #0077B5;
 }
+.fa-github{
+  font-weight: bold;
+}
+
 .tags:hover {
-  color: #c1c1c1;
+  color: #f1f1f1;
+  cursor:pointer;
+}
+.tags-no:hover {
+  color: gray;
   cursor:pointer;
 }
 

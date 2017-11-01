@@ -4,6 +4,11 @@
   <div class="container">
     <h1 class="display-3">Courtesy Parking</h1>
     <p class="lead">Use it for yourself, help others in the process, and let others help you as well.</p>
+    <hr class="my-4">
+    <p>Had Enough? Maybe It's Time to log out.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/logout" role="button">Log Out</a>
+    </p>
   </div>
 </div>
 
@@ -12,21 +17,21 @@
     <div class="parkingList">
       <ul>
         <% for (let item in parking){ %>
-         <li>
+        <li>
           <a href="/parking/<%= parking[item].id %>">
             <p>Location: <%= parking[item].location %></p>
           </a>
-         <p><b>Description:</b> <%= parking[item].description %></p>
-         <p><b>Available: </b><%= parking[item].available %></p>
-         <p><b>Departure: </b><%= parking[item].departtime %></p>
-         <p><b>Latitude: </b><%= parking[item].latitude %></p>
-         <p><b>Longitude: </b><%= parking[item].longitude %></p>
+          <p><b>Description:</b> <%= parking[item].description %></p>
+          <p><b>Available: </b><%= parking[item].available %></p>
+          <p><b>Departure: </b><%= parking[item].departtime %></p>
+          <p><b>Latitude: </b><%= parking[item].latitude %></p>
+          <p><b>Longitude: </b><%= parking[item].longitude %></p>
 
           <form method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
-              <button type="submit">Remove</button>
+            <button type="submit">Remove</button>
           </form>
           <br>
-         </li>
+        </li>
         <% } %>
       </ul>
     </div>
