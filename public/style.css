@@ -150,7 +150,6 @@ a {
   bottom: 0;
   width: 100%;
 }
-
 .marker {
   background-image: url('https://www.mapbox.com/help/demos/custom-markers-gl-js/mapbox-icon.png');
   background-size: cover;
@@ -159,23 +158,47 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .mapboxgl-popup {
   max-width: 200px;
 }
-
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
 .mapboxgl-popup-content {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 
-.mapboxgl-popup {
-  max-width: 200px;
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+}
+.myjumbotron {
+  background-color: white;
 }
 
-.mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+
+/*SOCIAL MEDIA HANDLES*/
+
+.fa-facebook-official{
+  font-weight: bold;
+  color: #3B5998;
+}
+.fa-twitter-square{
+  font-weight: bold;
+  color: #00aced;
+  padding: 0px 20px;
+}
+.fa-linkedin-square{
+  font-weight: bold;
+  color: #0077B5;
+}
+.tags:hover {
+  color: #c1c1c1;
+  cursor:pointer;
 }
 
 /*-------------------------- PARKING-INDEX STYLES---------------------------*/

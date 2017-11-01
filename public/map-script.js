@@ -2,7 +2,7 @@ console.log('map-script.js connected');
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3dzMzAzIiwiYSI6ImNqOWVpNnZsOTJhZjIzMnJ3ZXcwYnI5ZDEifQ.w9e2F0_uvFFTHBYz7RIM5w';
 
-var map = new mapboxgl.Map({
+let map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v9',
   center: [-96, 37.8],
@@ -11,7 +11,7 @@ var map = new mapboxgl.Map({
 
 
 // code from the next step will go here!
-var geojson = {
+let geojson = {
   type: 'FeatureCollection',
   features: [{
     type: 'Feature',
@@ -41,7 +41,7 @@ var geojson = {
 geojson.features.forEach(function(marker) {
 
   // create a HTML element for each feature
-  var el = document.createElement('div');
+  let el = document.createElement('div');
   el.className = 'marker';
 
   // make a marker for each feature and add to the map
@@ -58,24 +58,24 @@ const headers = new Headers({
   'Accept': 'application/json'
 })
 
+
 fetch('/parking', {
   headers: headers
 }).then(res => res.json())
 .then(spotsData => {
-  console.log(spotsData);
   spotsData.parking.forEach(function(marker) {
-
+    console.log(marker);
   // create a HTML element for each feature
-  var el = document.createElement('div');
+  let el = document.createElement('div');
   el.className = 'marker';
 
   // make a marker for each feature and add to the map
   new mapboxgl.Marker(el)
   .setLngLat([parseFloat(marker.longitude), parseFloat(marker.latitude)])
   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-   .setHTML('<h3>' + spotsData.description + '</h3><p>' + spotsData.departtime + '</p>'))
+   .setHTML('<h6>' + marker.description + '</h6><p>' + marker.departtime + '</p>'))
   .addTo(map);
-  });
+});
 })
 
 
