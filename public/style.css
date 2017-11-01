@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor:pointer;
+}
+
 /*--------------------------LANDING PAGE---------------------------*/
 .indexPage .intro {
   height: 100%;
@@ -222,12 +226,12 @@ a {
 }
 .display-1 {
   color: #f1f1f1;
-  text-shadow: 0px 1px black;
+  text-shadow: 1px 4px black;
   font-weight: bold;
 }
 .display-4 {
   color: #f1f1f1;
-  text-shadow: 0px 1px black;
+  text-shadow: 1px 3px black;
   width: 70%;
   position: relative;
   left: 15%;
@@ -235,5 +239,8 @@ a {
 }
 /*-------------------------- END PARKING-ABOUT STYLES---------------------------*/
 
-
-
+/*-------------------------- REGISTRATION PAGE STYLES---------------------------*/
+.register {
+  padding-top: 5%;
+}
+/*-------------------------- END REGISTRATION PAGE STYLES---------------------------*/

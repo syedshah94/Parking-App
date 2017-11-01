@@ -14,7 +14,7 @@
 
 <section>
   <div class="pageContent">
-    <div class="parkingList">
+    <div class="parkingList d-flex justify-content-center">
       <ul>
         <% for (let item in parking){ %>
         <li>
@@ -27,9 +27,10 @@
           <p><b>Latitude: </b><%= parking[item].latitude %></p>
           <p><b>Longitude: </b><%= parking[item].longitude %></p>
 
-          <form method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
-            <button type="submit">Remove</button>
+          <form class="remove" method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE">
+            <button method="POST" action="/parking/<%= parking[item].id %>?_method=DELETE" type="submit" class="btn btn-danger">REMOVE</button>
           </form>
+          <hr>
           <br>
         </li>
         <% } %>
@@ -37,9 +38,11 @@
     </div>
   </div>
 
-  <button class="add-button">
-    <a href="/parking/add">Add Item</a>
-  </button>
+  <p class="lead d-flex justify-content-center">
+    <a class="btn btn-primary btn-lg" href="/parking/add" role="button">Add Item</a>
+  </p>
+
 </section>
 
+ <script src="/script.js"></script>
 <% include ../partials/parking_end %>

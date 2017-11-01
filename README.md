@@ -73,6 +73,15 @@ Oct 31st, 2017 (11:07 pm):
     --Set up users page
     --Create Cards
 
+Sept 1st, 2017 (12:22 pm):
+    I now have log out working properly, but clicking 'log in' on the landing
+    page throws an error saying something along "Already logged in", but
+    it should instead just let us get into the page. This should be a quick fix,
+    hopefully we fix this today. I commented out the 'Explore' button on the landing
+    page since its silly to have at this point. 
+
+
+-----------------------------------------------------------------------------------
 LONG TERM GOALS:
     -User specific pages
     -Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
