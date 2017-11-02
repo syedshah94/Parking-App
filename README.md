@@ -12,11 +12,13 @@ they plan to leave the spot, so potential nearby drivers can just go to their
 location rather than scouting for some free space.
 
 
-
 Current Usage state:
 -Don't forget to hit "Log Out" if you plan on using the page again.
 -If you accidently did this, instead of registering again, you can simply 
 append '/parking' to the URL after the '.com'
+
+
+Launch App Via Heroku Server: https://courtesy-parking-app.herokuapp.com/
 
 
 **A.** *Run Site Locally*
@@ -204,5 +206,14 @@ https://scotch.io/tutorials/easy-node-authentication-setup-and-local
 I'll update this readme if I do, which will be more likely than not.
 ^I ended up not using this, but I'll keep it here for my future self.
 
-API USED:
+*API USED:*
 MapBox: "An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app."
+*Technologies Used:*
+-Node
+-Express
+-Version Control (Git, GitHub)
+-HTML5
+-CSS3
+-Javascript
+-jQuery
+-Heroku
