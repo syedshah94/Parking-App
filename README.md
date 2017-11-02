@@ -116,7 +116,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
 
 ## Phases of Completion
 
-Oct 31st, 2017 (11:07 pm):
+*Oct 31st, 2017 (11:07 pm):*
     Now there's two things I've realized today. IT'S HALLOWEEN?! Also I should
     have been updating here a bit more frequently. Regardless, my overall goal was to create
     an app which would alert people seeking parking spots when a spot would free up,
@@ -150,7 +150,7 @@ Oct 31st, 2017 (11:07 pm):
     --Set up users page
     --Create Cards
 
-Sept 1st, 2017 (12:22 pm):
+*Sept 1st, 2017 (12:22 pm):*
     I now have log out working mostly properly. If a user is already logged in,
     clicking 'log in' on the landing page should just move you to the home page.
     Instead the program throws an error saying something along "Already logged 
@@ -158,21 +158,26 @@ Sept 1st, 2017 (12:22 pm):
     quick fix, hopefully we fix this today. I commented out the 'Explore' 
     button on the landing page since its silly to have at this point. 
 
-Sept 1st, 2017 (04:34 pm): 
+*Sept 1st, 2017 (04:34 pm):*
     So the current state of this project is quite a lot to mention, so I'll 
     mention the most important details. Currently the app is available on Heroku,
     however there's still some work to be done. 
     Currently all users would see the same page upon logging in, so in the
     future, I will need to create user specific pages, which will simply give 
     us security of our input and better track who input what. 
-Sept 1st, 2017 (05:15 pm): 
+
+*Sept 1st, 2017 (05:15 pm):*
     So this app is currently a sort of "Free-For-AllTreasure Chest" in which 
     anyone can take and put in as they please. Although this problem can be 
     resolved, the purpose of this app was not to create a completely, fully
     functioning app, it was to learn Express. I feel I've satisfied my purpose.
     I'm going to move on to apsiring to master React, and then I can come back to
     this. 
+
+
 -----------------------------------------------------------------------------------
+
+
 LONG TERM GOALS:
     -User specific pages
     -Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
