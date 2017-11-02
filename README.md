@@ -90,6 +90,10 @@ the package.json:
 
 ## Wireframe
 
+So I ended up not following the wireframe very closely for how the page would
+look. But it currently looks better because I made this wireframe and 
+was able to scrap ideas I would have otherwise implemented and then scrapped.
+So I definitely saved some time with this, even if it may not quite seem so.
 ![alternateText](./assets/index.jpg)
 
 ![alternateText](./assets/erd.png)
