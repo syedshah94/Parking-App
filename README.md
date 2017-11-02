@@ -19,7 +19,76 @@ Current Usage state:
 append '/parking' to the URL after the '.com'
 
 
-## Wireframe TESTER
+**A.** *Run Site Locally*
+```
+1. Make a clone of this repo
+2. Launch terminal
+3. Type in 'npm run dev' to start the server on port 3000
+    -You can change the port if you like if you're using port
+    3000 for something else. Simply edit server.js  
+    ^--At a worst case scenario, you may also have to change
+        the port in /db/config.js (which I cannot be too helpful with).
+        You most likely won't have to worry about this.
+4. Open up your browser and go to:
+    http://localhost:3000/
+5. If done correctly, you should be at the site, running locally.
+```
+*Note*: You may have to install all relevant dependancies. Refer to *D*
+
+**B.** *Set up a database*
+```
+Just note that the database will have no database the first time you 
+would run this locally. So you may have to do the following to set up
+the database:
+1. Launch Terminal
+2. Create a psql database called 'parking_spots'
+    Note: It can be named whatever you like.
+    If you need help doing this, refer to (C.)
+3. In terminal, go to the directory where migrations.sql resides on this
+    repo. It should be under /db/migrations/ 
+    
+4. Then run the command:
+    psql -d [the name of the database] -f migrations.sql
+    ^This will create our database for both parking spots and users
+5. Then run the command:
+    psql -d [the name of the database] -f ../seeds/spots.sql
+    ^This will create some sample values for our parking spots
+```
+
+**C.** *Create a database*
+```
+1. Launch Terminal
+2. Run the command:
+    createdb [your database name]
+```
+
+**D.** *Installing dependencies*
+```
+1. Launch Terminal
+2. Go to the directory of where you have /.git 
+    It should be in the root of /Parking-App
+2. Run the command:
+    npm install [dependency name]
+
+For Step 2 Make sure you have the following (or later versions) in 
+the package.json:
+
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mapbox-gl": "^0.41.0",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^7.1.0"
+```
+
+## Wireframe
 
 ![alternateText](./assets/index.jpg)
 
@@ -119,4 +188,4 @@ I'll update this readme if I do, which will be more likely than not.
 ^I ended up not using this, but I'll keep it here for my future self.
 
 API USED:
-MapBox
+MapBox: "An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app."
