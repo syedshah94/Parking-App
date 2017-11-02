@@ -91,7 +91,7 @@ the package.json:
 ## Wireframe
 
 So I ended up not following the wireframe very closely for how the page would
-look. But it currently looks better because I made this wireframe and 
+look. But it looks nice now, because I made this wireframe and 
 was able to scrap ideas I would have otherwise implemented and then scrapped.
 So I definitely saved some time with this, even if it may not quite seem so.
 ![alternateText](./assets/index.jpg)
@@ -137,7 +137,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     display parking information along with a nice, small map with relative
     information.
 
-    Current problems that should be addressed in the future: There's currently
+    Current problems that should be addressed in the future: There's
     no user-specific page. So far it's just a sort of login and use. Well you 
     don't even need to log in since I made the process simpler with the "Explore"
     button on the landing page. Yes, I am well aware this makes no sense in a real app,
@@ -154,7 +154,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     --Set up users page
     --Create Cards
 
-*Nove 1st, 2017 (12:22 pm):*
+*Nov 1st, 2017 (12:22 pm):*
     I now have log out working mostly properly. If a user is already logged in,
     clicking 'log in' on the landing page should just move you to the home page.
     Instead the program throws an error saying something along "Already logged 
@@ -164,14 +164,14 @@ NOTE 2: For when I want to redirect login/register to '/user' page
 
 *Nov 1st, 2017 (04:34 pm):*
     So the current state of this project is quite a lot to mention, so I'll 
-    mention the most important details. Currently the app is available on Heroku,
+    mention the most important details. The app is available on Heroku,
     however there's still some work to be done. 
     Currently all users would see the same page upon logging in, so in the
     future, I will need to create user specific pages, which will simply give 
     us security of our input and better track who input what. 
 
 *Nov 1st, 2017 (05:15 pm):*
-    So this app is currently a sort of "Free-For-AllTreasure Chest" in which 
+    So this app is a sort of "Free-For-AllTreasure Chest" right now, in which 
     anyone can take and put in as they please. Although this problem can be 
     resolved, the purpose of this app was not to create a completely, fully
     functioning app, it was to learn Express. I feel I've satisfied my purpose.
