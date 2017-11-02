@@ -154,7 +154,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     --Set up users page
     --Create Cards
 
-*Sept 1st, 2017 (12:22 pm):*
+*Nove 1st, 2017 (12:22 pm):*
     I now have log out working mostly properly. If a user is already logged in,
     clicking 'log in' on the landing page should just move you to the home page.
     Instead the program throws an error saying something along "Already logged 
@@ -162,7 +162,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     quick fix, hopefully we fix this today. I commented out the 'Explore' 
     button on the landing page since its silly to have at this point. 
 
-*Sept 1st, 2017 (04:34 pm):*
+*Nov 1st, 2017 (04:34 pm):*
     So the current state of this project is quite a lot to mention, so I'll 
     mention the most important details. Currently the app is available on Heroku,
     however there's still some work to be done. 
@@ -170,7 +170,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     future, I will need to create user specific pages, which will simply give 
     us security of our input and better track who input what. 
 
-*Sept 1st, 2017 (05:15 pm):*
+*Nov 1st, 2017 (05:15 pm):*
     So this app is currently a sort of "Free-For-AllTreasure Chest" in which 
     anyone can take and put in as they please. Although this problem can be 
     resolved, the purpose of this app was not to create a completely, fully
@@ -178,6 +178,14 @@ NOTE 2: For when I want to redirect login/register to '/user' page
     I'm going to move on to apsiring to master React, and then I can come back to
     this. 
 
+*Nov 2st, 2017 (10:15 am):*
+    JUST completed making readme and also making it look nice. Tons 
+    of commits on jsut readme updates (which may seem like I'm spamming).
+    I just keep adding things and then feel like "But wait, there's more!"
+    The project looks great. The App is fully responsive across multiple
+    platforms, I tested it and asked others to test it for me. Have yet
+    to learn of unknown problems from my testers and myself, but only time
+    will tell. 
 
 -----------------------------------------------------------------------------------
 
