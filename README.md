@@ -11,13 +11,6 @@ description users will provide, where they may detail information of when
 they plan to leave the spot, so potential nearby drivers can just go to their
 location rather than scouting for some free space.
 
-
-Current Usage state:
--Don't forget to hit "Log Out" if you plan on using the page again.
--If you accidently did this, instead of registering again, you can simply 
-append '/parking' to the URL after the '.com'
-
-
 Launch App Via Heroku Server: https://courtesy-parking-app.herokuapp.com/
 
 
