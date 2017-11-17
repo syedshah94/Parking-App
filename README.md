@@ -63,7 +63,7 @@ the database:
 2. Go to the directory of where you have /.git 
     It should be in the root of /Parking-App
 2. Run the command:
-    npm install [dependency name]
+    npm install
 
 For Step 2 Make sure you have the following (or later versions) in 
 the package.json:
@@ -187,6 +187,7 @@ NOTE 2: For when I want to redirect login/register to '/user' page
 
 LONG TERM GOALS:
     -User specific pages
+    
     -Users may be reviewed, and earn 'courtesy points'. Who knows, maybe
     they can spend these courtesy points somehow, maybe use it as coupons
     or just show off that they're better than you when it comes to 
@@ -203,10 +204,17 @@ I'll update this readme if I do, which will be more likely than not.
 MapBox: "An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app."
 *Technologies Used:*
 -Node
+
 -Express
+
 -Version Control (Git, GitHub)
+
 -HTML5
+
 -CSS3
+
 -Javascript
+
 -jQuery
+
 -Heroku
