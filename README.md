@@ -201,6 +201,7 @@ I'll update this readme if I do, which will be more likely than not.
 ^I ended up not using this, but I'll keep it here for my future self.
 
 *API USED:*
+
 MapBox: "An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app."
 
 *Technologies Used:*
