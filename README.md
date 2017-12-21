@@ -202,6 +202,7 @@ I'll update this readme if I do, which will be more likely than not.
 
 *API USED:*
 MapBox: "An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app."
+
 *Technologies Used:*
 
 -Node
